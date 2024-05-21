@@ -1,0 +1,27 @@
+---
+interface Props {
+	size: number;
+}
+
+const { size } = Astro.props;
+---
+
+<div class="w-full aspect-square relative">
+	<svg
+		class="absolute top-0 left-0 w-full h-full"
+		viewBox="0 0 4 4"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		{
+			Array.from({ length: size * size }, (_, index) => (
+				<rect
+					x={index % size}
+					y={Math.floor(index / size)}
+					width="1"
+					height="1"
+					fill="currentColor"
+				/>
+			))
+		}
+	</svg>
+</div>

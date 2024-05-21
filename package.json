@@ -1,7 +1,7 @@
 {
-	"name": "astro-pwa-starter",
-	"version": "0.0.0",
-	"private": false,
+	"name": "slide-and-seek",
+	"version": "1.0.0",
+	"private": true,
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
